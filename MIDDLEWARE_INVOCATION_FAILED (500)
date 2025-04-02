@@ -1,0 +1,23 @@
+// middleware.js
+import { NextResponse } from 'next/server';
+
+export function middleware(request) {
+  try {
+    // Your logic here
+    return NextResponse.next();
+  } catch (error) {
+    console.error('Middleware error:', error);
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+  }
+}// middleware.js
+import { NextResponse } from 'next/server';
+
+export function middleware(request) {
+  try {
+    // Your logic here
+    return NextResponse.next();
+  } catch (error) {
+    console.error('Middleware error:', error);
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+  }
+}
