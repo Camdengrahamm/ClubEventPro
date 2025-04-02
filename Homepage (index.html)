@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClubEventPro | Modern Event Booking for Country Clubs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2a5d34;
+            --secondary: #d4af37;
+            --light: #f8f9fa;
+            --dark: #343a40;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('golf-course-event.jpg');
+            background-size: cover;
+            color: white;
+            padding: 120px 20px;
+            text-align: center;
+        }
+        .btn {
+            background: var(--secondary);
+            color: var(--primary);
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px 5px;
+        }
+        .features {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .feature-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 30px 20px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .workflow {
+            background: var(--light);
+            padding: 60px 20px;
+        }
+        .pricing {
+            padding: 60px 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div style="display: flex; justify-content: space-between; padding: 20px; max-width: 1200px; margin: 0 auto;">
+                <div style="font-family: 'Playfair Display', serif; font-weight: bold; font-size: 24px; color: var(--primary);">ClubEventPro</div>
+                <div>
+                    <a href="#features" style="margin: 0 15px; text-decoration: none; color: var(--dark);">Features</a>
+                    <a href="#workflow" style="margin: 0 15px; text-decoration: none; color: var(--dark);">Workflow</a>
+                    <a href="#pricing" style="margin: 0 15px; text-decoration: none; color: var(--dark);">Pricing</a>
+                    <a href="#demo" class="btn">Request Demo</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1 style="font-family: 'Playfair Display', serif; font-size: 48px;">Modern Event Management for Country Clubs</h1>
+        <p style="font-size: 20px; max-width: 700px; margin: 0 auto 30px;">Automate inquiries, contracts, payments and scheduling while delivering a premium member experience.</p>
+        <a href="#demo" class="btn">Get Started</a>
+        <a href="#features" class="btn" style="background: transparent; border: 2px solid white; color: white;">Learn More</a>
+    </section>
+
+    <section id="features" class="features">
+        <h2 style="font-family: 'Playfair Display', serif; color: var(--primary);">Streamline Your Event Booking Process</h2>
+        <p style="max-width: 700px; margin: 0 auto 40px;">Our all-in-one platform handles everything from initial inquiry to post-event follow-up.</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto;">
+            <div class="feature-card">
+                <h3>Branded Inquiry Forms</h3>
+                <p>Custom forms that match your club's branding, collecting all event details up front.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Automated Contracts</h3>
+                <p>Digital contracts sent automatically with e-signature capabilities.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Deposit Processing</h3>
+                <p>Secure payment links integrated with Stripe or Square.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Admin Dashboard</h3>
+                <p>Central hub to track all events, payments, and communications.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Calendar Sync</h3>
+                <p>Automatically add events to your club's calendar systems.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Guest Communications</h3>
+                <p>Automated emails and SMS updates throughout the process.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="workflow" class="workflow">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="font-family: 'Playfair Display', serif; color: var(--primary); text-align: center;">How It Works</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 40px;">
+                <div style="flex: 1; min-width: 250px; padding: 20px; text-align: center;">
+                    <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-weight: bold;">1</div>
+                    <h3>Inquiry Form</h3>
+                    <p>Guest submits event details through your branded form</p>
+                </div>
+                <div style="flex: 1; min-width: 250px; padding: 20px; text-align: center;">
+                    <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-weight: bold;">2</div>
+                    <h3>Admin Review</h3>
+                    <p>Club staff review and approve the request</p>
+                </div>
+                <div style="flex: 1; min-width: 250px; padding: 20px; text-align: center;">
+                    <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-weight: bold;">3</div>
+                    <h3>Deposit Payment</h3>
+                    <p>Automated payment link sent to secure the booking</p>
+                </div>
+                <div style="flex: 1; min-width: 250px; padding: 20px; text-align: center;">
+                    <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-weight: bold;">4</div>
+                    <h3>Digital Contract</h3>
+                    <p>E-signature contract automatically generated and sent</p>
+                </div>
+                <div style="flex: 1; min-width: 250px; padding: 20px; text-align: center;">
+                    <div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-weight: bold;">5</div>
+                    <h3>Calendar Update</h3>
+                    <p>Event added to club calendars and CRM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <h2 style="font-family: 'Playfair Display', serif; color: var(--primary); text-align: center;">Simple Pricing</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 40px;">Choose the option that works best for your club</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto;">
+            <div style="border: 1px solid #ddd; border-radius: 8px; padding: 40px 30px; text-align: center;">
+                <h3>Basic Setup</h3>
+                <p style="font-size: 36px; font-weight: bold; color: var(--primary);">$2,500</p>
+                <p>One-time setup fee</p>
+                <ul style="text-align: left; margin: 30px 0; padding-left: 20px;">
+                    <li style="margin: 10px 0;">Branded inquiry form</li>
+                    <li style="margin: 10px 0;">Admin dashboard</li>
+                    <li style="margin: 10px 0;">Payment processing</li>
+                    <li style="margin: 10px 0;">Basic automations</li>
+                    <li style="margin: 10px 0;">1-hour training</li>
+                </ul>
+                <a href="#demo" class="btn">Get Started</a>
+            </div>
+            <div style="border: 1px solid var(--secondary); border-radius: 8px; padding: 40px 30px; text-align: center; position: relative; overflow: hidden;">
+                <div style="position: absolute; top: 0; right: 0; background: var(--secondary); color: var(--primary); padding: 5px 20px; font-weight: bold; transform: rotate(45deg) translate(30%, -50%);">POPULAR</div>
+                <h3>Premium Package</h3>
+                <p style="font-size: 36px; font-weight: bold; color: var(--primary);">$4,500</p>
+                <p>+ $300/month</p>
+                <ul style="text-align: left; margin: 30px 0; padding-left: 20px;">
+                    <li style="margin: 10px 0;">Everything in Basic</li>
+                    <li style="margin: 10px 0;">Custom branding</li>
+                    <li style="margin: 10px 0;">Advanced automations</li>
+                    <li style="margin: 10px 0;">Member portal</li>
+                    <li style="margin: 10px 0;">Staff training</li>
+                    <li style="margin: 10px 0;">Priority support</li>
+                </ul>
+                <a href="#demo" class="btn">Get Started</a>
+            </div>
+            <div style="border: 1px solid #ddd; border-radius: 8px; padding: 40px 30px; text-align: center;">
+                <h3>Enterprise</h3>
+                <p style="font-size: 36px; font-weight: bold; color: var(--primary);">Custom</p>
+                <p>For multi-club organizations</p>
+                <ul style="text-align: left; margin: 30px 0; padding-left: 20px;">
+                    <li style="margin: 10px 0;">Custom development</li>
+                    <li style="margin: 10px 0;">API integrations</li>
+                    <li style="margin: 10px 0;">Centralized management</li>
+                    <li style="margin: 10px 0;">Dedicated support</li>
+                    <li style="margin: 10px 0;">Advanced reporting</li>
+                </ul>
+                <a href="#demo" class="btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" style="background: var(--primary); color: white; padding: 80px 20px; text-align: center;">
+        <div style="max-width: 700px; margin: 0 auto;">
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 36px;">Ready to Modernize Your Event Management?</h2>
+            <p style="font-size: 18px; margin-bottom: 30px;">Schedule a demo to see ClubEventPro in action and get a customized proposal for your club.</p>
+            
+            <form style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 600px; margin: 0 auto;">
+                <input type="text" placeholder="Your Name" style="padding: 12px; border-radius: 4px; border: none;">
+                <input type="email" placeholder="Email Address" style="padding: 12px; border-radius: 4px; border: none;">
+                <input type="text" placeholder="Club Name" style="padding: 12px; border-radius: 4px; border: none;">
+                <input type="tel" placeholder="Phone Number" style="padding: 12px; border-radius: 4px; border: none;">
+                <select style="padding: 12px; border-radius: 4px; border: none; grid-column: 1 / -1;">
+                    <option>I'm interested in...</option>
+                    <option>Basic Setup</option>
+                    <option>Premium Package</option>
+                    <option>Enterprise Solution</option>
+                    <option>Just Learning More</option>
+                </select>
+                <button type="submit" class="btn" style="grid-column: 1 / -1; background: var(--secondary); color: var(--primary); border: none; cursor: pointer;">Request Demo</button>
+            </form>
+        </div>
+    </section>
+
+    <footer style="background: var(--dark); color: white; padding: 40px 20px; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="font-family: 'Playfair Display', serif; font-weight: bold; font-size: 24px; margin-bottom: 20px;">ClubEventPro</div>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
+                <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Home</a>
+                <a href="#features" style="color: white; margin: 0 15px; text-decoration: none;">Features</a>
+                <a href="#workflow" style="color: white; margin: 0 15px; text-decoration: none;">Workflow</a>
+                <a href="#pricing" style="color: white; margin: 0 15px; text-decoration: none;">Pricing</a>
+                <a href="#demo" style="color: white; margin: 0 15px; text-decoration: none;">Demo</a>
+                <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Privacy Policy</a>
+                <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Terms</a>
+            </div>
+            <p>© 2023 ClubEventPro. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
