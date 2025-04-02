@@ -1,0 +1,5 @@
+<!-- Example embedded form (would be replaced with actual Typeform/Jotform embed code) -->
+<div style="max-width: 800px; margin: 40px auto;">
+    <h2>Book Your Event</h2>
+    <iframe src="https://yourclub.typeform.com/to/example" width="100%" height="600px" frameborder="0"></iframe>
+</div>
