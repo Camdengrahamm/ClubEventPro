@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features | ClubEventPro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2a5d34;
+            --secondary: #d4af37;
+            --light: #f8f9fa;
+            --dark: #343a40;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+        }
+        .feature-hero {
+            background: linear-gradient(rgba(42,93,52,0.8), rgba(42,93,52,0.8)), url('clubhouse.jpg');
+            background-size: cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .feature-section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .feature-block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+        .feature-img {
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .feature-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .feature-content h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            font-size: 28px;
+        }
+        .feature-list {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        .feature-list li {
+            margin: 10px 0;
+        }
+        @media (max-width: 768px) {
+            .feature-block {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div style="display: flex; justify-content: space-between; padding: 20px; max-width: 1200px; margin: 0 auto;">
+                <div style="font-family: 'Playfair Display', serif; font-weight: bold; font-size: 24px; color: var(--primary);">
+                    <a href="index.html" style="text-decoration: none; color: inherit;">ClubEventPro</a>
+                </div>
+                <div>
+                    <a href="features.html" style="margin: 0 15px; text-decoration: none; color: var(--primary); font-weight: bold;">Features</a>
+                    <a href="case-studies.html" style="margin: 0 15px; text-decoration: none; color: var(--dark);">Case Studies</a>
+                    <a href="integrations.html" style="margin: 0 15px; text-decoration: none; color: var(--dark);">Integrations</a>
+                    <a href="#demo" class="btn" style="background: var(--secondary); color: var(--primary); padding: 8px 20px; border-radius: 30px; text-decoration: none; font-weight: bold;">Demo</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="feature-hero">
+        <h1 style="font-family: 'Playfair Display', serif; font-size: 42px;">Powerful Features Designed for Clubs</h1>
+        <p style="font-size: 20px; max-width: 700px; margin: 0 auto;">Everything you need to streamline events from inquiry to execution.</p>
+    </section>
+
+    <section class="feature-section">
+        <div class="feature-block">
+            <div class="feature-img">
+                <img src="form-screenshot.jpg" alt="Branded Inquiry Form">
+            </div>
+            <div class="feature-content">
+                <h3>Branded Inquiry Forms</h3>
+                <p>Capture all event details with forms that match your club's aesthetic and branding guidelines.</p>
+                <ul class="feature-list">
+                    <li>Fully customizable fields and design</li>
+                    <li>Mobile-optimized for guests on the go</li>
+                    <li>Conditional logic to show/hide questions</li>
+                    <li>Embeddable on your website or standalone</li>
+                    <li>Automatic data validation</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-block">
+            <div class="feature-content">
+                <h3>Admin Dashboard</h3>
+                <p>Your command center for managing all events with real-time updates and status tracking.</p>
+                <ul class="feature-list">
+                    <li>Visual calendar of all bookings</li>
+                    <li>Custom status tracking (Inquiry, Approved, Paid, Completed)</li>
+                    <li>At-a-glance financial summaries</li>
+                    <li>Staff assignment capabilities</li>
+                    <li>Advanced filtering and search</li>
+                </ul>
+            </div>
+            <div class="feature-img">
+                <img src="dashboard-screenshot.jpg" alt="Admin Dashboard">
+            </div>
+        </div>
+
+        <div class="feature-block">
+            <div class="feature-img">
+                <img src="contract-screenshot.jpg" alt="Digital Contracts">
+            </div>
+            <div class="feature-content">
+                <h3>Automated Digital Contracts</h3>
+                <p>Professional contracts generated automatically with e-signature capabilities.</p>
+                <ul class="feature-list">
+                    <li>Pre-approved templates for different event types</li>
+                    <li>Auto-population from inquiry form data</li>
+                    <li>Multi-signer support</li>
+                    <li>Reminders for pending signatures</li>
+                    <li>Secure document storage</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-block">
+            <div class="feature-content">
+                <h3>Payment Processing</h3>
+                <p>Secure payment collection with automatic reconciliation and reporting.</p>
+                <ul class="feature-list">
+                    <li>Deposit and final payment collection</li>
+                    <li>Custom payment schedules</li>
+                    <li>Multiple payment methods (credit, ACH, etc.)</li>
+                    <li>Automatic receipts</li>
+                    <li>Integration with club accounting</li>
+                </ul>
+            </div>
+            <div class="feature-img">
+                <img src="payments-screenshot.jpg" alt="Payment Processing">
+            </div>
+        </div>
+
+        <div class="feature-block">
+            <div class="feature-img">
+                <img src="communications-screenshot.jpg" alt="Guest Communications">
+            </div>
+            <div class="feature-content">
+                <h3>Automated Communications</h3>
+                <p>Keep guests informed with timely, professional messages throughout the process.</p>
+                <ul class="feature-list">
+                    <li>Customizable email templates</li>
+                    <li>SMS text notifications</li>
+                    <li>Automatic status updates</li>
+                    <li>Pre-event reminders</li>
+                    <li>Post-event thank you/follow-up</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px;">
+            <a href="#demo" class="btn" style="background: var(--primary); color: white; padding: 15px 40px; font-size: 18px;">Schedule a Demo</a>
+        </div>
+    </section>
+
+    <footer style="background: var(--dark); color: white; padding: 40px 20px; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="font-family: 'Playfair Display', serif; font-weight: bold; font-size: 24px; margin-bottom: 20px;">ClubEventPro</div>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
+                <a href="index.html" style="color: white; margin: 0 15px; text-decoration: none;">Home</a>
+                <a href="features.html" style="color: white; margin: 0 15px; text-decoration: none;">Features</a>
+                <a href="case-studies.html" style="color: white; margin: 0 15px; text-decoration: none;">Case Studies</a>
+                <a href="integrations.html" style="color: white; margin: 0 15px; text-decoration: none;">Integrations</a>
+                <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Privacy</a>
+                <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Terms</a>
+            </div>
+            <p>© 2023 ClubEventPro. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
