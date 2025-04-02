@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrations | ClubEventPro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2a5d34;
+            --secondary: #d4af37;
+            --light: #f8f9fa;
+            --dark: #343a40;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+        }
+        .integrations-hero {
+            background: linear-gradient(rgba(42,93,52,0.8), rgba(42,93,52,0.8)), url('club-tech.jpg');
+            background-size: cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .integrations-section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .integration-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .category-card {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .category-card h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            margin-top: 0;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 10px;
+        }
+        .integration-item {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .integration-logo {
+            width: 50px;
+            height: 50px;
+            background: var(--light);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .integration-logo img {
+            max-width: 40px;
+            max-height: 40px;
+        }
+        .integration-details h4 {
+            margin: 0 0 5px 0;
+        }
+        .integration-details p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+        .api-section {
+            background: var(--light);
+            padding: 40px;
+            border-radius: 8px;
+            margin: 60px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div style="display: flex; justify-content: space-between; padding: 20px; max-width: 1200px; margin: 0 auto;">
+                <div style="font-family: 'Playfair Display', serif; font-weight: bold; font-size: 24px; color: var(--primary);">
+                    <a href="index.html" style="text-decoration: none; color: inherit;">ClubEventPro</a>
+                </div>
+                <div>
+                    <a href="features.html" style="margin: 0 15px; text-decoration: none; color: var(--dark);">Features</a>
+                    <a href="case-studies.html" style="margin: 0 15px; text-decoration: none; color: var(--dark);">Case Studies</a>
+                    <a href="integrations.html" style="margin: 0 15px; text-decoration: none; color: var(--primary); font-weight: bold;">Integrations</a>
+                    <a href="#demo" class="btn" style="background: var(--secondary); color: var(--primary); padding: 8px 20px; border-radius: 30px; text-decoration: none; font-weight: bold;">Demo</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="integrations-hero">
+        <h1 style="font-family: 'Playfair Display', serif; font-size: 42px;">Seamless Club Technology Integration</h1>
+        <p style="font-size: 20px; max-width: 700px; margin: 0 auto;">ClubEventPro works with your existing systems to create a unified workflow.</p>
+    </section>
+
+    <section class="integrations-section">
+        <h2 style="font-family: 'Playfair Display', serif; color: var(--primary); text-align: center;">Our Integration Partners</h2>
+        <p style="text-align: center; max-width: 700px; margin: 20px auto;">ClubEventPro connects with the systems you already use to streamline operations and eliminate double data entry.</p>
+        
+        <div class="integration-categories">
+            <div class="category-card">
+                <h3>Payment Processing</h3>
+                <div class="integration-item">
+                    <div class="integration-logo">
+                        <img src="stripe-logo.png" alt="Stripe">
+                    </div>
+                    <div class="integration-details">
+                        <h4>Stripe</h4>
+                        <p>Secure payment processing with automatic reconciliation</p>
+                    </div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-logo">
+                        <img src="square-logo.png" alt="Square">
+                    </div>
+                    <div class="integration-details">
+                        <h4>Square</h4>
+                        <p>Payment processing with POS integration</p>
+                    </div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-logo">
+                        <img src="paypal-logo.png" alt="PayPal">
+                    </div>
+                    <div class="integration-details">
+                        <h4>PayPal</h4>
+                        <p>Alternative payment option for guests</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <h3>Contracts & Signatures</h3>
+                <div class="integration-item">
+                    <div class="integration-logo">
+                        <img src="docusign-logo.png" alt="DocuSign">
+                    </div>
+                    <div class="integration-details">
+                        <h4>DocuSign</h4>
+                        <p>Legally binding e-signatures for contracts</p>
+                    </div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-logo">
+                        <img src="pandadoc-logo.png" alt="PandaDoc">
+                    </div>
+                    <div class="integration-details">
+                        <h4>PandaDoc</h4>
+                        <p>Dynamic document generation and tracking</p>
+                    </div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-logo">
+                        <img src="hellosign-logo.png" alt="HelloSign">
+                    </div>
+                    <div class="integration-details">
+                        <h4>HelloSign</h4>
+                        <p>Simple electronic signature solution</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <h3>Club Management</h3>
+                <div class="integration-item">
+                    <div class="integration-logo">
+                        <img src="jonas-logo.png" alt="Jonas">
+                    </div>
+                    <div class="integration-details">
+                        <h4>Jonas Club Software</h4>
+                        <p>Sync member data and billing information</p>
+                    </div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-logo">
+                        <img src="clubessential-logo.png" alt="ClubEssential">
+                    </div>
+                    <div class="integration-details">
+                        <h4>ClubEssential</h4>
+                        <p>Member data and point-of-sale integration</p>
+                    </div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-logo">
+                        <img src="foreup-logo.png" alt="ForeUp">
+                    </div>
+                    <div class="integration-details">
+                        <h4>ForeUp</h4>
+                        <p>Tee time and golf event coordination</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="integration-categories" style="margin-top: 30px;">
+            <div class="category-card">
+                <h3>Communication</h3>
+                <div class="integration-item">
+                    <div class="integration-logo">
+                        <img src="mailchimp-logo.png" alt="Mailchimp">
+                    </div>
+                    <div class="integration-details">
+                        <h4>Mailchimp</h4>
+                        <p>Email marketing and automation</p>
+                    </div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-logo">
+                        <img src="twilio-logo.png" alt="Twilio">
+                    </div>
+                    <div class="integration-details">
+                        <h4>Twilio</h4>
+                        <p>SMS text message notifications</p>
+                    </div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-logo">
+                        <img src="slack-logo.png" alt="Slack">
+                    </div>
+                    <div class="integration-details">
+                        <h4>Slack</h4>
+                        <p>Internal team notifications</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <h3>Calendaring</h3>
+                <div class="integration-item">
+                    <div class="integration-logo">
+                        <img src="google-calendar-logo.png" alt="Google Calendar">
+                    </div>
+                    <div class="integration-details">
+                        <h4>Google Calendar</h4>
+                        <p>Automatic event scheduling</p>
+                    </div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-logo">
+                        <img src="outlook-logo.png" alt="Microsoft Outlook">
+                    </div>
+                    <div class="integration-details">
+                        <h4>Microsoft Outlook</h4>
+                        <p>Calendar integration for staff</p>
+                    </div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-logo">
+                        <img src="apple-calendar-logo.png" alt="Apple Calendar">
+                    </div>
+                    <div class="integration-details">
+                        <h4>Apple Calendar</h4>
+                        <p>Personal calendar integration</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <h3>Automation Platforms</h3>
+                <div class="integration-item">
+                    <div class="integration-logo">
+                        <img src="zapier-logo.png" alt="Zapier">
+                    </div>
+                    <div class="integration-details">
+                        <h4>Zapier</h4>
+                        <p>Connect with 5000+ other apps</p>
+                    </div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-logo">
+                        <img src="make-logo.png" alt="Make">
+                    </div>
+                    <div class="integration-details">
+                        <h4>Make (Integromat)</h4>
+                        <p>Advanced workflow automation</p>
+                    </div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-logo">
+                        <img src="airtable-logo.png" alt="Airtable">
+                    </div>
+                    <div class="integration-details">
+                        <h4>Airtable</h4>
+                        <p>Custom database and reporting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="api-section">
+            <h3 style="font-family: 'Playfair Display', serif; color: var(--primary); margin-top: 0;">Custom API Integration</h3>
+            <p>Need to connect with a system not listed here? Our developer API allows for custom integrations with:</p>
+            <ul>
+                <li>Custom club management systems</li>
+                <li>Accounting software (QuickBooks, Xero, etc.)</li>
+                <li>CRM platforms</li>
+                <li>Internal databases</li>
+                <li>Proprietary systems</li>
+            </ul>
+            <p style="margin-top: 20px;"><a href="#" style="color: var(--primary); font-weight: bold;">Contact our integration team</a> to discuss your specific requirements.</p>
+        </div>
+    </section>
+
+    <footer style="background: var(--dark); color: white; padding: 40px 20px; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="font-family: 'Playfair Display', serif; font-weight: bold; font-size: 24px; margin-bottom: 20px;">ClubEventPro</div>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
+                <a href="index.html" style="color: white; margin: 0 15px; text-decoration: none;">Home</a>
+                <a href="features.html" style="color: white; margin: 0 15px; text-decoration: none;">Features</a>
+                <a href="case-studies.html" style="color: white; margin: 0 15px; text-decoration: none;">Case Studies</a>
+                <a href="integrations.html" style="color: white; margin: 0 15px; text-decoration: none;">Integrations</a>
+                <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Privacy</a>
+                <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Terms</a>
+            </div>
+            <p>© 2023 ClubEventPro. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
