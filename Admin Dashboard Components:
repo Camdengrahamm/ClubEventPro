@@ -1,0 +1,15 @@
+<!-- Sample dashboard card -->
+<div class="dashboard-card">
+    <h3>Upcoming Events</h3>
+    <div class="event-list">
+        <div class="event-item">
+            <div class="event-date">Jun 15, 2023</div>
+            <div class="event-details">
+                <strong>Wedding - Smith/Jones</strong>
+                <div>Status: <span class="status-paid">Deposit Paid</span></div>
+            </div>
+            <button class="action-btn">View Details</button>
+        </div>
+        <!-- More events would appear here -->
+    </div>
+</div>
