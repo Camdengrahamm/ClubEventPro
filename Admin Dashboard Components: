@@ -2,14 +2,14 @@
 <div class="dashboard-card">
     <h3>Upcoming Events</h3>
     <div class="event-list">
-        <div class="event-item">
+        <article class="event-item" role="listitem">
             <div class="event-date">Jun 15, 2023</div>
             <div class="event-details">
                 <strong>Wedding - Smith/Jones</strong>
                 <div>Status: <span class="status-paid">Deposit Paid</span></div>
             </div>
-            <button class="action-btn">View Details</button>
-        </div>
+            <button class="action-btn" aria-label="View details for Wedding - Smith/Jones">View Details</button>
+        </article>
         <!-- More events would appear here -->
     </div>
 </div>
